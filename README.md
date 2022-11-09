@@ -10,6 +10,13 @@ GM who wants to know how likely my baseball team will win each game it plays dur
 
 GM of a team that underperformed this past season. Which players should I target to improve my team?
 
+Conventional wisdom
+
+Hitting
+Pitching
+Defense
+Coaching
+
 
 Rationale for the Streamlit app:
 helps fans determine your team's chances of winning based on the teams' offensive and defensive stats during the game.
