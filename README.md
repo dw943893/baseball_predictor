@@ -3,7 +3,12 @@
 
 ## Problem Statement
 
-I am the general manager of a baseball team
+I am the new general manager of a small market last-place baseball team who desparately wants to improve the team's performance by making informed decisions based on data. But before I make any moves, I need to answer two questions:
+
+- What are the elements that most contribute to a team's winning? 
+- Which (lesser-known/affordable/below the radar?) players should I add to improve the team?
+
+
 want to identify the factors that contribute the most to the home team winning, and build a team with players that emphasize those qualities
 
 GM who wants to know how likely my baseball team will win each game it plays during the regular season.
@@ -17,6 +22,11 @@ Pitching
 Defense
 Coaching
 
+From looking at the 2021 season, general positive relationship between the number of team wins and the number of above average players on the team.
+
+Features that have the highest correlation with team wins
+
+Positional breakdown of the above average players on each team that made the playoffs in 2021.
 
 Rationale for the Streamlit app:
 helps fans determine your team's chances of winning based on the teams' offensive and defensive stats during the game.
@@ -32,6 +42,8 @@ Identify the players that contribute the most to the offensive and defensive cat
 Dashboard? 
 
 ## Definition of Success
+insights / recommendations
+streamlit app prototype
 
 ## Items in this Repo
 1) "code" folder containing:
