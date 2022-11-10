@@ -9,7 +9,7 @@ I am the new general manager of a small market baseball team that finished in la
 
 - And thus, most likely will not get the stars players who are above average in multiple categories that contribute to team wins
 
-Because of these contraints, my strategy is to identify productive players that are lesser-known or "under the radar" who are above average in one or two key areas for possible addition to the team.
+Because of these contraints, my strategy is to identify lesser-known or "under the radar" players who are above average in one or two key areas for possible addition to the team.
 
 I desparately want to improve the team's performance but before I make any moves, I need to answer two questions:
 
@@ -50,14 +50,16 @@ I also want to ease the traffic congestion after the game and increase fan engag
 
 ## The Data 
 
-* [Lahman Baseball Database](https://www.seanlahman.com/baseball-archive/statistics/): A database of open-source baseball statistics created and maintained by investigative reporter, Sean Lahman. This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2021.  It includes data from the two current leagues (American and National), the four other "major" leagues (American Association, Union Association, Players League, and Federal League), and the National Association of 1871-1875. You can find more information about Sean on his [website](https://www.seanlahman.com/). The [Data Dictionary](https://www.seanlahman.com/files/database/readme2021.txt)
+* [Lahman Baseball Database](https://www.seanlahman.com/baseball-archive/statistics/): A database of open-source baseball statistics created and maintained by investigative reporter, Sean Lahman. This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2021.  It includes data from the two current leagues (American and National), the four other "major" leagues (American Association, Union Association, Players League, and Federal League), and the National Association of 1871-1875. You can find more information about Sean on his [website](https://www.seanlahman.com/). [Data Dictionary](https://www.seanlahman.com/files/database/readme2021.txt)
 
 * [Retrosheet Game Logs](https://www.retrosheet.org/gamelogs/index.html): The game logs contain a record of major league games played from 1871-2020. At a minimum, it provides a listing of the date and score of each game. The logs include information such as team statistics, winning and losing pitchers, linescores, attendance, starting pitchers, umpires and more. There are 161 fields in each record.  [Data Dictionary](https://www.retrosheet.org/gamelogs/glfields.txt) 
-    - Please note disclaimer related to Retrosheet data: The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at www.retrosheet.org.
+    - Please note the disclaimer related to Retrosheet data: The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at www.retrosheet.org.
+
+(language about the amount of data, number of rows,)
 
 ## Approach
 
-Reviewing the baseball statistics of teams after 1945, the offensive categories with the highest positive correlation with a team winning are:
+Reviewing the team statistics for seasons in the modern baseball era (aka post-1945), the offensive categories with the highest positive correlation with a team winning are:
 
 - runs scored
 - walks
@@ -69,7 +71,22 @@ The categories with the highest negative correlation with winning are Earned Run
 Based on this information, I sought to identify under the radar/lesser known players who are better than average in these categories to consider as additions to the team.
 
 
+
+
 ## Modeling/Prediction
+
+I used a logistc regression model to classify whether the home team will win or lose (target variable) based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which apply to both teams, are number of:
+
+- hits
+- walks
+- left on base
+- caught stealing
+- double plays
+- errors
+- batters hit-by-pitch
+
+The model's accuracy rate is 95% which outperforms the null baseline accuracy of 53.8%. The model did not show signs of overfitting or underfitting since the accuracy rate for both the training and test sets was 95%. I ran a grid search pipeline with different logistic regression hyperparameters, as well as a stacked model using random forest, gradient boost, and ada boost as level 1 estimators, and a logistic regression as the final estimator. None of these models outperformed the accuracy rate of 95% on the test set as shown from the original logistic regression model.
+
 
 
 ## Findings/Recommendations
