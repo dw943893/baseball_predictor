@@ -17,7 +17,7 @@ I desparately want to improve the team's performance but before I make any moves
 
 - Which players should I add to improve the team?
 
-I also want to ease the traffic congestion after the game and increase fan engagement by helping them decide whether to stay or leave based on the likihood of the home team winning that particular game, through a new app "Will My Home Team Win?"
+I also want to ease the traffic congestion after the game and increase fan engagement by helping them decide whether to stay or leave based on the likelihood of the home team winning that particular game, through a new app "Will My Home Team Win?"
 
 
 ## Definition of Success
@@ -50,6 +50,10 @@ I also want to ease the traffic congestion after the game and increase fan engag
 
 ## The Data 
 
+* [Lahman Baseball Database](https://www.seanlahman.com/baseball-archive/statistics/): A database of open-source baseball statistics created and maintained by investigative reporter, Sean Lahman. This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2021.  It includes data from the two current leagues (American and National), the four other "major" leagues (American Association, Union Association, Players League, and Federal League), and the National Association of 1871-1875. You can find more information about Sean on his [website](https://www.seanlahman.com/). The [Data Dictionary](https://www.seanlahman.com/files/database/readme2021.txt)
+
+* [Retrosheet Game Logs](https://www.retrosheet.org/gamelogs/index.html): The game logs contain a record of major league games played from 1871-2020. At a minimum, it provides a listing of the date and score of each game. The logs include information such as team statistics, winning and losing pitchers, linescores, attendance, starting pitchers, umpires and more. There are 161 fields in each record.  [Data Dictionary](https://www.retrosheet.org/gamelogs/glfields.txt) 
+    - Please note disclaimer related to Retrosheet data: The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at www.retrosheet.org.
 
 ## Approach
 
