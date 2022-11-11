@@ -17,7 +17,7 @@ Before I make any moves, I need to answer two questions:
 
 - Which players should I add to improve the team?
 
-In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app that helps them decide whether to stay or leave early (to beat the traffic) based on the likelihood of the home team winning that particular game.
+In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app, "" that helps them decide whether to stay or leave early (and beat the traffic) based on the likelihood of the home team winning that particular game.
 
 ## Definition of Success
 I define success was identifying which players to target for addition to the team.
@@ -57,29 +57,24 @@ A prototype app that predicts whether the home team will win with an accuracy ra
 * [Retrosheet Game Logs](https://www.retrosheet.org/gamelogs/index.html): The game logs contain a record of major league games played from 1871-2020. At a minimum, it provides a listing of the date and score of each game. The logs include information such as team statistics, winning and losing pitchers, linescores, attendance, starting pitchers, umpires and more. There are 161 fields in each record.  [Data Dictionary](https://www.retrosheet.org/gamelogs/glfields.txt) 
     - Please note the disclaimer related to Retrosheet data: The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at www.retrosheet.org.
 
-(language about the amount of data, number of rows,)
-
 
 ## Approach
 
-Reviewing the team statistics for seasons in the modern baseball era (aka post-1945), the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
+Analyzing the team statistics for seasons after 1945 (aka the Modern Era of baseball as defined by Major League Baseball), the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
 
 - runs scored
 - walks
 - hits
 
-In other words, as the number of runs, walks, or hits for a team increases, so does the number of wins. 
+In other words, as a team's number of runs, walks, or hits increase, so does their number of wins. 
 
-The category with the highest negative correlation (-0.40 and above) with winning is Earned Run Average (ERA), which means as the team's ERA increases, the number of wins decreases.
+The category that is most negatively correlated with winning (-0.40 and below) is Earned Run Average (ERA), which means as a team's ERA increases their number of wins decreases.
 
-Based on this information, I sought to identify "under the radar"/lesser known players who are better than average in these categories to consider as additions to the team.
-
-(langauge about how i categorized the players; )
-
+Based on this information, I sought to identify "under the radar"/lesser known players who are better than average in these categories. 
 
 ## Modeling/Prediction
 
-I used data from Retrosheet game logs of 146,691 baseball games after 1945 to train a logistic regression classification model to predict whether the home team will win or lose (the target variable) based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
+I used data from the Retrosheet game logs of 146,691 baseball games after 1945 to train a logistic regression classification model to predict whether the home team will win or lose based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
 
 - hits
 - walks
@@ -102,13 +97,19 @@ A possible reason for the model's higher misclassification rate for close games 
 
 ## Findings/Recommendations
 
-Analyzing the team stats of seasons after 1945, the offensive categories with the strongest positive correlation (0.40 and above) with a team winning are: runs, hits, walks.
+As stated above, the offensive categories with the strongest positive correlation (0.40 and above) with a team winning are: runs, hits, walks. The category with the strongest negative correlation (-0.40 and lower) with winning is Earned Run Average (ERA).
 
-The category with the strongest negative correlation (-0.40 and lower) with winning is Earned Run Average (ERA).
+Based on these findings, I recommend adding the following lesser-known hitters who have been above average in runs batting in (RBI), hits, and walks in at least one season since 2017:
 
-lesser known players with better than average hits/AB, walk/AB, RBI/AB
+- Ryan McMahon (Rockies)
+- Yoan Moncada (White Sox)
+- Travis Shaw (Red Sox)
 
-(Ketel Marte)
+And adding the following lesser-known starting pitchers who have had better than average ERAs in at least one season since 2017:
+
+- Cal Quantrill (Guardians)
+- Logan Webb (Giants)
+- Adrian Houser (Brewers)
 
 
 Looking at the 2021 season, there is generally a positive relationship between the number of wins and the number of above average players on the team. 
