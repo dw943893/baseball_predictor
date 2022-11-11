@@ -57,15 +57,18 @@ I also want to ease the traffic congestion after the game and increase fan engag
 
 (language about the amount of data, number of rows,)
 
+
 ## Approach
 
-Reviewing the team statistics for seasons in the modern baseball era (aka post-1945), the offensive categories with the highest positive correlation (0.40 and above) with a team winning are:
+Reviewing the team statistics for seasons in the modern baseball era (aka post-1945), the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
 
 - runs scored
 - walks
 - hits
 
-The category with the highest negative correlation (-0.40 and above) with winning is Earned Run Average (ERA).
+In other words, as the number of runs, walks, or hits for a team increases, so does the number of wins. 
+
+The category with the highest negative correlation (-0.40 and above) with winning is Earned Run Average (ERA), which means as the team's ERA increases, the number of wins decreases.
 
 Based on this information, I sought to identify "under the radar"/lesser known players who are better than average in these categories to consider as additions to the team.
 
@@ -73,8 +76,8 @@ Based on this information, I sought to identify "under the radar"/lesser known p
 
 
 ## Modeling/Prediction
-
-I used a logistc regression model to classify whether the home team will win or lose (target variable) based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which apply to both teams, are number of:
+(using seasons after 1945)
+I ran a logistic regression model on the Retrosheet game logs after 1945 to classify whether the home team will win or lose (target variable) based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which apply to both teams, are number of:
 
 - hits
 - walks
@@ -87,6 +90,7 @@ I used a logistc regression model to classify whether the home team will win or 
 The model's accuracy rate is 95% which outperforms the null baseline accuracy of 53.8%. The model did not show signs of overfitting or underfitting since the accuracy rate for both the training and test sets was 95%. I ran a grid search pipeline with different logistic regression hyperparameters, as well as a stacked model using random forest, gradient boost, and ada boost as level 1 estimators, and a logistic regression as the final estimator. None of these models outperformed the accuracy rate of 95% on the test set from the original logistic regression model.
 
 
+(Model Evaluation)
 
 ## Findings/Recommendations
 
@@ -96,7 +100,7 @@ The category with the strongest negative correlation (-0.40 and lower) with winn
 
 lesser known players with better than average hits/AB, walk/AB, RBI/AB
 
-
+(Ketel Marte)
 
 
 Looking at the 2021 season, there is generally a positive relationship between the number of wins and the number of above average players on the team. 
