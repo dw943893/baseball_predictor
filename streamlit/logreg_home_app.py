@@ -9,25 +9,24 @@ def load_model():
   return the_model
 
 model = load_model()
-
+st.title("Welcome To The Baseball Game Predictor!")
 st.title('Will the Home Team Win?')
-st.subheader("Regular Season Games")
-a = st.number_input('Home team batters hit by pitch', min_value = 0)
-# when user pressed enter, need to store the input
 
+a = st.number_input('Home team batters hit by pitch', min_value = 0)
 b = st.number_input('Home team hits', min_value = 0)
 c = st.number_input('Home team walks', min_value = 0)
 d = st.number_input('Home team double plays', min_value = 0)
 e = st.number_input('Home team errors', min_value = 0)
 f = st.number_input('Home team left on base', min_value = 0)
 g = st.number_input('Home team caught stealing', min_value = 0)
+
+l = st.number_input('Visiting team batters hit-by-pitch', min_value = 0)
+n = st.number_input('Visiting team hits', min_value = 0)
+m = st.number_input('Visiting team walks', min_value = 0)
+k = st.number_input('Visiting team double plays', min_value = 0)
+j = st.number_input('Visiting team errors', min_value = 0)
 h = st.number_input('Visiting team left on base', min_value = 0)
 i = st.number_input('Visiting team caught stealing', min_value = 0)
-j = st.number_input('Visiting team errors', min_value = 0)
-k = st.number_input('Visiting team double plays', min_value = 0)
-l = st.number_input('Visiting team batters hit-by-pitch', min_value = 0)
-m = st.number_input('Visiting team walks', min_value = 0)
-n = st.number_input('Visiting team hits', min_value = 0)
 
 if st.button('Submit'):
     data = {
