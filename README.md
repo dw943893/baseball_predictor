@@ -38,7 +38,11 @@ I define success was identifying lesser known/"under the radar" players to possi
      
         - "CAP_Modeling.ipynb"
 
-2) Streamlit folder:
+2) Images folder
+
+    - .png files used in this readme
+
+3) Streamlit folder:
 
     - Pickled logistic regression model:
     
@@ -48,9 +52,7 @@ I define success was identifying lesser known/"under the radar" players to possi
     
         - logreg_home_app.py
 
-3) Images folder
 
-    - .png files used in this readme
 
 
 ## The Data 
@@ -81,11 +83,11 @@ While the model's accuracy rate was 95% overall, it performed worse when it pred
 
 A possible reason for the model's higher misclassification rate for close games is the values of the predictor variables for both the home and visiting team are very similar in games where the scores are very close, making it harder to predict which team will win.
 
-I do note that there is high multicollinearity between the predictor variables in the logistic regression model which makes the exponentialted logistic regression coefficients uninterpretable. However, since I am using this model for prediction not inference, multicollinearity is not an issue.
+I do note that there is high multicollinearity between the predictor variables in the logistic regression model which makes the exponentiated logistic regression coefficients uninterpretable. However, since I am using this model for prediction and not inference, multicollinearity is not an issue.
 
 ## Findings/Recommendations
 
-Looking at the 2021 season, there is generally a positive relationship between the number of wins and the number of above average players on the team. Intuitively, this makes sense: the higher the number of above average players a team has, the more games the team will win. Examining the 2021 season, the data generally supports this claim, but not in every case.
+Looking at the 2021 season, there is generally a positive relationship between the number of team wins and the number of above average players on the team. Intuitively, this makes sense: the higher the number of above average players a team has, the more games the team will win. Examining the 2021 season, the data generally supports this claim, but not in every case.
 
 ![This is an image](https://github.com/dw943893/baseball_predictor/blob/main/images/team_num_ab_avgplayers_and_wins.png)
 
@@ -96,17 +98,17 @@ How did I define an above average player? I considered a player above average if
 
 Analyzing the team statistics for seasons after 1945 (aka the Modern Era of baseball as defined by Major League Baseball), the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
 
-- runs scored
-- hits 
-- walks
-- homeruns
+- runs scored (R)
+- hits (H)
+- walks (BB, bases on balls)
+- homeruns (HR)
 
 ![This is an image](https://github.com/dw943893/baseball_predictor/blob/main/images/features_corr_with_team_wins.png)
 
 
 In other words, as a team's number of runs, hits, walks, or homeruns increase, so does their number of wins. The category that is most negatively correlated with winning (-0.40 and below) is Earned Run Average (ERA), which means as a team's ERA increases their number of wins decreases.
 
-Based on these findings, I recommend adding the following lesser-known hitters who have been above average in runs batting in (RBI), hits, walks, and homeruns in at least one season since 2017:
+Based on these findings, I recommend adding the following lesser-known hitters who have been above average in runs batting in (RBI), hits, walks, and homeruns in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
 
 - Ryan McMahon (Rockies)
 - Yoan Moncada (White Sox)
@@ -120,7 +122,7 @@ And adding the following lesser-known starting pitchers who have had better than
 
 ## Streamlit App
 
-This app determines a team's chances of winning based on the home and visiting teams' offensive and defensive stats during the game. Consider the following scenario, which is anathema to hard-core fans, but might apply to casual fans:
+This app calculates a team's chances of winning based on the home and visiting teams' offensive and defensive stats during the game. Consider the following scenario, which is anathema to hard-core fans, but might apply to casual fans:
 
 - You're at a baseball game, which can get notoriously long. It's the fourth inning and the score is 0 - 0. You want to beat the traffic to make it to a dinner later that evening, but you don't want to leave and miss out on the fun if you think the home team win has a good chance of winning. What do you do? 
 
@@ -128,6 +130,8 @@ This app determines a team's chances of winning based on the home and visiting t
 
 
 ## Potential Areas for Model Improvement
+
+Improve the model's accuracy rate for predicting games close games, where the margin of victory is one-run, by employing transfer learning from principal component analysis. 
 
 ---
 
