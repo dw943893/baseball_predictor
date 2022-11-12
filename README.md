@@ -86,7 +86,7 @@ I do note that there is high multicollinearity between the predictor variables i
 
 ## Findings/Recommendations
 
-Looking at the 2021 season, there is generally a positive relationship between the number of team wins and the number of above average players on the team. Intuitively, this makes sense: the higher the number of above average players a team has, the more games the team will win. Examining the 2021 season, the data generally supports this claim, but not in every case.
+Looking at the 2021 season, there is generally a positive relationship between the number of team wins and the number of above average players on the team. Intuitively, this makes sense: the higher the number of above average players a team has, the more games the team will win. Examining the 2021 season, the data generally supports this claim, but not in every case. I highlighted the teams that made the playoffs in the graph below. 
 
 ![This is an image](https://github.com/dw943893/baseball_predictor/blob/main/images/team_num_ab_avgplayers_and_wins.png)
 
