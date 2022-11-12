@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Baseball GM/Home Team Win Predictor
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Baseball General Manager/Home Team Win Predictor
 ---
 
 ## Problem Statement
@@ -21,7 +21,7 @@ In addition to improving the team's on-field performance, I want to enhance the 
 
 ## Definition of Success
 
-I define success was identifying lesser known/"under the radar" players to possibly add to the team, and creating a prototype app that predicts whether the home team will win with an accuracy rate of at least 60%.
+I define success as identifying lesser known/"under the radar" players to possibly add to the team, and creating a prototype app that predicts whether the home team will win with an accuracy rate of at least 60%.
 
 ## Items in this Repo
 1) Jupiter notebook files:
@@ -54,7 +54,6 @@ I define success was identifying lesser known/"under the radar" players to possi
 
 
 
-
 ## The Data 
 
 * [Lahman Baseball Database](https://www.seanlahman.com/baseball-archive/statistics/): A database of open-source baseball statistics created and maintained by investigative reporter, Sean Lahman. This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2021.  It includes data from the two current leagues (American and National), the four other "major" leagues (American Association, Union Association, Players League, and Federal League), and the National Association of 1871-1875. You can find more information about Sean on his [website](https://www.seanlahman.com/). [Data Dictionary](https://www.seanlahman.com/files/database/readme2021.txt)
@@ -64,7 +63,7 @@ I define success was identifying lesser known/"under the radar" players to possi
 
 ## Modeling/Prediction
 
-I used data from the Retrosheet game logs of 146,691 baseball games after 1945 to train a logistic regression classification model to predict whether the home team will win or lose based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
+I used data from the Retrosheet game logs of 146,691 baseball games from 1946 to 2021 to train a logistic regression classification model to predict whether the home team will win or lose based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
 
 - hits
 - walks
@@ -92,11 +91,11 @@ Looking at the 2021 season, there is generally a positive relationship between t
 ![This is an image](https://github.com/dw943893/baseball_predictor/blob/main/images/team_num_ab_avgplayers_and_wins.png)
 
 
-(teams with the most "clutch" hitters?)
+Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. 
 
 How did I define an above average player? I considered a player above average if they were better than average in categories that most strongly correlated with team wins. What are these categories?
 
-Analyzing the team statistics for seasons after 1945 (aka the Modern Era of baseball as defined by Major League Baseball), the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
+Analyzing the team statistics for baseball seasons after 1945 (aka the Modern Era of baseball as defined by Major League Baseball), the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
 
 - runs scored (R)
 - hits (H)
