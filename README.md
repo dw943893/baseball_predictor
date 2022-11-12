@@ -112,11 +112,7 @@ And adding the following lesser-known starting pitchers who have had better than
 - Adrian Houser (Brewers)
 
 
-Looking at the 2021 season, there is generally a positive relationship between the number of wins and the number of above average players on the team. 
-
-Teams with more above average players on the roster have more wins, but that is not always the case.
-
-Intuitively, it makes sense to believe that the higher the number of above average players a team has, the more games the team will win. Examining the 2021 season, the data generally supports this claim, but not in every case.
+Looking at the 2021 season, there is generally a positive relationship between the number of wins and the number of above average players on the team. Intuitively, it makes sense to believe that the higher the number of above average players a team has, the more games the team will win. Examining the 2021 season, the data generally supports this claim, but not in every case.
 
 (scatter plot; team wins vs number of above average players)
 (point out Orioles and Giants; example of variation)
@@ -124,6 +120,8 @@ Intuitively, it makes sense to believe that the higher the number of above avera
 
 (scatter plot, relationship between )
 
+
+Star players are players who are above average in multiple categories over a sustained period of time
 
 
 ## Streamlit App
