@@ -129,6 +129,7 @@ This app calculates a team's chances of winning based on the home and visiting t
 
 - Break out the "Will My Home Team Win?" app, enter the stats for each team up until that point, and out spits the probability that the home team will win. If the home team most likely will lose, you leave the game early to beat the traffic and make it to dinner on time!
 
+![This is an image](https://github.com/dw943893/baseball_predictor/blob/main/images/streamlit_app_screen_shot.png)
 
 
 ## Potential Areas for Model Improvement
