@@ -3,7 +3,7 @@
 
 ## Problem Statement
 
-As the new general manager of a small market baseball team that underperformed last season, I desparately want to improve the team's performance next year, but am limited by the following constraints: 
+As the new general manager of a small market baseball team that underperformed last season, I desperately want to improve the team's performance next year, but am limited by the following constraints: 
 
 - I have less resources than larger market teams
 
@@ -58,7 +58,7 @@ I define success as identifying lesser known/"under the radar" players to possib
 
 * [Lahman Baseball Database](https://www.seanlahman.com/baseball-archive/statistics/): A database of open-source baseball statistics created and maintained by investigative reporter, Sean Lahman. This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2021.  It includes data from the two current leagues (American and National), the four other "major" leagues (American Association, Union Association, Players League, and Federal League), and the National Association of 1871-1875. You can find more information about Sean on his [website](https://www.seanlahman.com/). [Data Dictionary](https://www.seanlahman.com/files/database/readme2021.txt)
 
-* [Retrosheet Game Logs](https://www.retrosheet.org/gamelogs/index.html): The game logs contain a record of major league games played from 1871-2020. At a minimum, it provides a listing of the date and score of each game. The logs include information such as team statistics, winning and losing pitchers, linescores, attendance, starting pitchers, umpires and more. There are 161 fields in each record.  [Data Dictionary](https://www.retrosheet.org/gamelogs/glfields.txt) 
+* [Retrosheet Game Logs](https://www.retrosheet.org/gamelogs/index.html): The game logs contain a record of major league games played from 1871-2021. At a minimum, it provides a listing of the date and score of each game. The logs include information such as team statistics, winning and losing pitchers, linescores, attendance, starting pitchers, umpires and more. There are 161 fields in each record.  [Data Dictionary](https://www.retrosheet.org/gamelogs/glfields.txt) 
     - Please note the disclaimer related to Retrosheet data: The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at www.retrosheet.org.
 
 ## Modeling/Prediction
@@ -107,7 +107,9 @@ Analyzing the team statistics for baseball seasons after 1945 (aka the Modern Er
 
 In other words, as a team's number of runs, hits, walks, or homeruns increase, so does their number of wins. The category that is most negatively correlated with winning (-0.40 and below) is Earned Run Average (ERA), which means as a team's ERA increases their number of wins decreases.
 
-Based on these findings, I recommend adding the following lesser-known hitters who have been above average in runs batting in (RBI), hits, walks, and homeruns in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
+The average number of runs batting in, hits, walks, and homeruns for a player who has played in 100 games one of more times within the past 5 seasons is 64 RBI, 100 hits, 46 walks, and 18 homeruns. The average ERA of starting pitchers who have started 20 games at least once in the past 5 seasons is 4.11 runs.
+
+Based on these findings, I recommend adding the following lesser-known hitters who have been above average in these offensive categories in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
 
 - Ryan McMahon (Rockies)
 - Yoan Moncada (White Sox)
