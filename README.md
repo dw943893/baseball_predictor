@@ -130,6 +130,7 @@ This app calculates a team's chances of winning based on the home and visiting t
 - Break out the "Will My Home Team Win?" app, enter the stats for each team up until that point, and out spits the probability that the home team will win. If the home team most likely will lose, you leave the game early to beat the traffic and make it to dinner on time!
 
 
+
 ## Potential Areas for Model Improvement
 
 Improve the model's accuracy rate for predicting games close games, where the margin of victory is one-run, by employing transfer learning from principal component analysis. 
