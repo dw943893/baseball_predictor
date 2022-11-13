@@ -17,7 +17,7 @@ Before I make any moves, I need to answer two questions:
 
 - Which players should I add to improve the team?
 
-In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app, "Will the Home Team Win?" that helps them decide whether to stay or leave early and beat the traffic, based on the likelihood of the home team winning that particular game.
+In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app, "Baseball Game Predictor" that helps them decide whether to stay or leave early and beat the traffic, based on the likelihood of the home team winning that particular game.
 
 ## Definition of Success
 
@@ -116,7 +116,7 @@ I used data from the Retrosheet game logs of 146,691 baseball games from 1946 to
 - errors
 - batters hit-by-pitch
 
-The model's accuracy rate is 95% which outperforms the null baseline accuracy of 53.8%. The model did not show signs of overfitting or underfitting since the accuracy rate for both the training and test sets was 95%. In efforts to improve the accuracy, I ran a grid search pipeline with different logistic regression hyperparameters, as well as a stacked model using random forest, gradient boost, and ada boost as level 1 estimators, and a logistic regression as the final estimator. None of these models outperformed the accuracy rate of 95% on the test set from the original logistic regression model. 
+The model's accuracy rate is 95% which outperforms the null baseline accuracy of 53.8%. The model was not underfit or overfit since the accuracy rate for both the training and test sets was 95%. In efforts to improve the accuracy, I ran a grid search pipeline with different logistic regression hyperparameters, as well as a stacked model using random forest, gradient boost, and ada boost as level 1 estimators, and a logistic regression as the final estimator. None of these models outperformed the accuracy rate of 95% on the test set from the original logistic regression model. 
 
 While the model's accuracy rate was 95% overall, it performed worse when it predicted the outcome of games whose margin of victory for either team was one-run. In other words, the model had a tougher time accurately predicting close games. The misclassification rate for games with a one-run margin of victory was 13%, while it was 2% for games with a two-run margin of victory, and 0% for games with a three run margin of victory. 
 
@@ -134,14 +134,14 @@ This app calculates a team's chances of winning based on the home and visiting t
 
 - You're at a baseball game, which can get notoriously long. It's the fourth inning and the score is 0 - 0. You want to beat the traffic to make it to a dinner later that evening, but you don't want to leave and miss out on the fun if you think the home team win has a good chance of winning. What do you do? 
 
-- Break out the "Will My Home Team Win?" app, enter the stats for each team up until that point, and out spits the probability that the home team will win. If the home team most likely will lose, you leave the game early to beat the traffic and make it to dinner on time!
+- Break out the "Baseball Game Predictor" app, enter the stats for each team up until that point, and out spits the probability that the home team will win. If the home team most likely will lose, you leave the game early to beat the traffic and make it to dinner on time!
 
 ![This is an image](https://github.com/dw943893/baseball_predictor/blob/main/images/streamlit_app_screen_shot.png)
 
 
 ## Potential Areas for Model Improvement
 
-Improve the model's accuracy rate for predicting games close games, where the margin of victory is one-run, by employing transfer learning from principal component analysis. 
+Potentially improve the model's accuracy rate for predicting close games, where the margin of victory is one-run, by employing transfer learning from principal component analysis. 
 
 ---
 
