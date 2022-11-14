@@ -38,11 +38,14 @@ I define success as identifying lesser known/"under the radar" players to possib
      
         - "CAP_Modeling.ipynb"
 
-2) Images folder
+2) CSV file :
+    - "retrosheet_game_log_data_columns.csv" used to rename columns in the game logs during data cleaning
+
+3) Images folder
 
     - .png files used in this readme
 
-3) Streamlit folder:
+4) Streamlit folder:
 
     - Pickled logistic regression model:
     
