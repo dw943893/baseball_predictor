@@ -93,7 +93,7 @@ Based on these findings, I recommend adding the following lesser-known hitters w
 - Yoan Moncada (White Sox) (Best season from 2017- 2021: 2019, RBI: 79, hits: 161, walks: 40, HR: 25)
 - Travis Shaw (Red Sox) (Best season from 2017- 2021: 2017, RBI 101, hits: 147, walks: 60, HR: 31)
 
-And adding the following lesser-known starting pitchers who's average ERAs over the past five seasons have been better than the league average:
+And adding the following lesser-known starting pitchers who's average ERA over the past five seasons have been better than the league average:
 
 - Cal Quantrill (Guardians) (Best season from 2017- 2021: 2021, ERA: 2.89)
 - Logan Webb (Giants) (Best season from 2017- 2021: 2021, ERA: 3.03 )
