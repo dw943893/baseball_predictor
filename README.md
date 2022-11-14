@@ -77,7 +77,7 @@ In other words, as a team's number of runs, hits, walks, or homeruns increase, s
 
 Intuitively, it makes sense to conclude that the greater the number of players on a team who are better than average in these categories, the more wins that team will experience. Looking at the 2021 season, this generally plays out. There is a moderately positive relationship between the number of team wins and the number of above average players on the team. 
 
-But this is not always true in every case. Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. 
+But this is not true in every case. Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. 
 
 The dots with the team names are the teams that made the playoffs in the 2021 season. The Braves, highlighted in yellow, won the World Series by defeating the Astos.
 
@@ -87,13 +87,13 @@ The dots with the team names are the teams that made the playoffs in the 2021 se
 
 
 
-Based on these findings, I recommend adding the following lesser-known hitters who have been above average in the aforementioned offensive categories (runs batted in (RBI), hits, walks, and homeruns) in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
+Based on these findings, I recommend adding the following lesser-known hitters who's average numbers in the aforementioned offensive categories (runs batted in (RBI), hits, walks, and homeruns) over the past five seasons have been better than the league average. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
 
 - Ryan McMahon (Rockies) (Best season from 2017- 2021: 2021, RBI: 86, hits: 134, walks: 59, HR: 23)
 - Yoan Moncada (White Sox) (Best season from 2017- 2021: 2019, RBI: 79, hits: 161, walks: 40, HR: 25)
 - Travis Shaw (Red Sox) (Best season from 2017- 2021: 2017, RBI 101, hits: 147, walks: 60, HR: 31)
 
-And adding the following lesser-known starting pitchers who have had better than average ERAs in at least one season since 2017:
+And adding the following lesser-known starting pitchers who's average ERAs over the past five seasons have been better than the league average:
 
 - Cal Quantrill (Guardians) (Best season from 2017- 2021: 2021, ERA: 2.89)
 - Logan Webb (Giants) (Best season from 2017- 2021: 2021, ERA: 3.03 )
