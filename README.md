@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Baseball General Manager/Home Team Win Predictor
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Improving Baseball Team Performance and Fan Engagement, a General Manager's Perspective
 ---
 
 ## Problem Statement
@@ -87,17 +87,17 @@ The dots with the team names are the teams that made the playoffs in the 2021 se
 
 
 
-Based on these findings, I recommend adding the following lesser-known hitters who have been above average in the aforementioned offensive categories (runs, hits, walks, and homeruns) in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
+Based on these findings, I recommend adding the following lesser-known hitters who have been above average in the aforementioned offensive categories (runs batted in (RBI), hits, walks, and homeruns) in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
 
-- Ryan McMahon (Rockies)
-- Yoan Moncada (White Sox)
-- Travis Shaw (Red Sox)
+- Ryan McMahon (Rockies) (Best season from 2017- 2021: 2021, RBI: 86, hits: 134, walks: 59, HR: 23)
+- Yoan Moncada (White Sox) (Best season from 2017- 2021: 2019, RBI: 79, hits: 161, walks: 40, HR: 25)
+- Travis Shaw (Red Sox) (Best season from 2017- 2021: 2017, RBI 101, hits: 147, walks: 60, HR: 31)
 
 And adding the following lesser-known starting pitchers who have had better than average ERAs in at least one season since 2017:
 
-- Cal Quantrill (Guardians)
-- Logan Webb (Giants)
-- Adrian Houser (Brewers)
+- Cal Quantrill (Guardians) (Best season from 2017- 2021: 2021, ERA: 2.89)
+- Logan Webb (Giants) (Best season from 2017- 2021: 2021, ERA: 3.03 )
+- Adrian Houser (Brewers) (Best season from 2017- 2021: 2021, ERA: 3.22)
 
 
 For reference, the average number of runs batting in, hits, walks, and homeruns for a player who played in 100 games one of more times within the past 5 seasons is 64 RBI, 100 hits, 46 walks, and 18 homeruns. The average ERA of starting pitchers who have started 20 games at least once in the past 5 seasons is 4.11 runs.
@@ -106,7 +106,7 @@ For reference, the average number of runs batting in, hits, walks, and homeruns 
 
 ## Modeling/Prediction
 
-Circling back to enhancing the fan experience through the "Baseball Game Predictor" app, I used data from the Retrosheet game logs of 146,691 baseball games from 1946 to 2021 to train a logistic regression classification model to predict whether the home team will win or lose based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
+Circling back to the goal of enhancing the fan experience through the "Baseball Game Predictor" app, I used data from the Retrosheet game logs of 146,691 baseball games from 1946 to 2021 to train a logistic regression classification model to predict whether the home team will win or lose based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
 
 - hits
 - walks
