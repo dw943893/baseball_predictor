@@ -73,7 +73,7 @@ For the purposes of this analysis, we looked at team stats and game log data for
 ## Findings/Recommendations
 
 What features are most strongly correlated with team wins?
-Analyzing the post-1945 team stats for every baseball team up until to 2021 season, which equates to 1,780 teams, the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
+Analyzing the post-1945 team stats for every baseball team up to the 2021 season, a duration that includes 1,780 teams, the offensive categories with the highest positive correlation (0.40 and above) with team wins are:
 
 - runs scored (R)
 - hits (H)
