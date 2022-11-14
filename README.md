@@ -109,6 +109,8 @@ And adding the following lesser-known starting pitchers who's average ERA over t
 - Adrian Houser (Brewers) (Best season from 2017- 2021: 2021, ERA: 3.22)
 
 
+There are risks with taking this approach. These players usually have a shorter track record of sustained above average performance, increasing the chances any potential deal will be a "bust" because the player does not perform as expected.
+
 For reference, the average number of runs batting in, hits, walks, and homeruns for a player who played in 100 games one of more times within the past 5 seasons is 64 RBI, 100 hits, 46 walks, and 18 homeruns. The average ERA of starting pitchers who have started 20 games at least once in the past 5 seasons is 4.11 runs.
 
 
