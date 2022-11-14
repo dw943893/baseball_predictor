@@ -38,14 +38,18 @@ I define success as identifying lesser known/"under the radar" players to possib
      
         - "CAP_Modeling.ipynb"
 
-2) CSV file:
+2) PDF file:
+
+    - "baseball.pdf" presentation
+
+3) CSV file:
     - "retrosheet_game_log_data_columns.csv" used to rename columns in the game logs during data cleaning
 
-3) Images folder:
+4) Images folder:
 
     - .png files used in this readme
 
-4) Streamlit folder:
+5) Streamlit folder:
 
     - Pickled logistic regression model:
     
