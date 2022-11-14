@@ -11,13 +11,13 @@ As the new general manager of a small market baseball team that underperformed l
 
 Because of these constraints, my strategy is to identify lesser-known or "under the radar" players who are above average in one or two key areas for possible addition to the team.
 
-Before I make any moves, I need to answer two questions:
+In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app, "Baseball Game Predictor" that helps them decide whether to stay for the entire game or leave early and beat the traffic, based on the likelihood of the home team winning that particular game.
+
+Before I make any moves related to improving team performance, I need to answer two questions:
 
 - What are the elements that most strongly correlate to team wins? 
 
 - Which players should I add to improve the team?
-
-In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app, "Baseball Game Predictor" that helps them decide whether to stay for the entire game or leave early and beat the traffic, based on the likelihood of the home team winning that particular game.
 
 ## Definition of Success
 
@@ -84,7 +84,7 @@ Analyzing the post-1945 team stats for every baseball team up until to 2021 seas
 
 In other words, as a team's number of runs, hits, walks, or homeruns increase, so does their number of wins. The category that is most negatively correlated with winning (-0.40 and below) is Earned Run Average (ERA), which means as a team's ERA increases, their number of wins decreases. This makes sense since ERA is the average number of runs a team gives up to the opponent. 
 
-Intuitively, it makes sense to conclude that the greater the number of players on a team who are better than average in these categories, the more wins that team will experience. Looking at the 2021 season, this generally plays out. There is a moderately positive relationship between the number of team wins and the number of above average players on the team. 
+Intuitively, it makes sense to believe that the greater the number of players on a team who are better than average in these categories, the more wins that team will experience. To see if that rings true, I identified the players with above average numbers, and counted how many of these players were on each team. Looking at the 2021 season, there is a moderately positive relationship between the number of team wins and the number of above average players on the team. 
 
 But this is not true in every case. Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. 
 
