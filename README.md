@@ -90,7 +90,7 @@ The dots with the team names are the teams that made the playoffs in the 2021 se
 
 
 
-Based on these findings, I recommend adding the following lesser-known hitters who's average numbers in the aforementioned offensive categories (runs batted in (RBI), hits, walks, and homeruns) over the past five seasons have been better than the league average. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
+Based on these findings, I recommend adding the following lesser-known hitters whose average numbers in the aforementioned offensive categories (runs batted in (RBI), hits, walks, and homeruns) over the past five seasons have been better than the league average. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
 
 - Ryan McMahon (Rockies) (Best season from 2017- 2021: 2021, RBI: 86, hits: 134, walks: 59, HR: 23)
 - Yoan Moncada (White Sox) (Best season from 2017- 2021: 2019, RBI: 79, hits: 161, walks: 40, HR: 25)
