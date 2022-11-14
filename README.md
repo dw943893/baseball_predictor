@@ -75,7 +75,7 @@ Analyzing the team statistics for baseball seasons after 1945 (aka the Modern Er
 
 In other words, as a team's number of runs, hits, walks, or homeruns increase, so does their number of wins. The category that is most negatively correlated with winning (-0.40 and below) is Earned Run Average (ERA), which means as a team's ERA increases, their number of wins decreases. This makes sense since ERA is the average number of runs a team gives up to the opponent. 
 
-Intuitively, it makes sense to conclude that the higher the number of players on a team who are better than average in these categories, the more wins that team will experience. Looking at the 2021 season, this generally plays out. There is a moderately positive relationship between the number of team wins and the number of above average players on the team. 
+Intuitively, it makes sense to conclude that the greater the number of players on a team who are better than average in these categories, the more wins that team will experience. Looking at the 2021 season, this generally plays out. There is a moderately positive relationship between the number of team wins and the number of above average players on the team. 
 
 But this is not always true in every case. Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. 
 
@@ -87,7 +87,7 @@ The dots with the team names are the teams that made the playoffs in the 2021 se
 
 
 
-Based on these findings, I recommend adding the following lesser-known hitters who have been above average in these offensive categories in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
+Based on these findings, I recommend adding the following lesser-known hitters who have been above average in the aforementioned offensive categories (runs, hits, walks, and homeruns) in at least one season since 2017. I categorized a player as "lesser-known" based on my subjective domain knowledge as a MLB baseball fan.
 
 - Ryan McMahon (Rockies)
 - Yoan Moncada (White Sox)
@@ -106,7 +106,7 @@ For reference, the average number of runs batting in, hits, walks, and homeruns 
 
 ## Modeling/Prediction
 
-I used data from the Retrosheet game logs of 146,691 baseball games from 1946 to 2021 to train a logistic regression classification model to predict whether the home team will win or lose based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
+Circling back to enhancing the fan experience through the "Baseball Game Predictor" app, I used data from the Retrosheet game logs of 146,691 baseball games from 1946 to 2021 to train a logistic regression classification model to predict whether the home team will win or lose based on 14 predictor variables, 7 for the home team and 7 for the visiting team. These variables, which are the same for both teams, are number of:
 
 - hits
 - walks
