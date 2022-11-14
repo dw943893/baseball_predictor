@@ -9,7 +9,7 @@ As the new general manager of a small market baseball team that underperformed l
 
 - And thus, most likely will not get the high-impact stars players
 
-Because of these contraints, my strategy is to identify lesser-known or "under the radar" players who are above average in one or two key areas for possible addition to the team.
+Because of these constraints, my strategy is to identify lesser-known or "under the radar" players who are above average in one or two key areas for possible addition to the team.
 
 Before I make any moves, I need to answer two questions:
 
@@ -17,7 +17,7 @@ Before I make any moves, I need to answer two questions:
 
 - Which players should I add to improve the team?
 
-In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app, "Baseball Game Predictor" that helps them decide whether to stay or leave early and beat the traffic, based on the likelihood of the home team winning that particular game.
+In addition to improving the team's on-field performance, I want to enhance the fan experience by easing traffic congestion after the game and increasing fan engagement through a new app, "Baseball Game Predictor" that helps them decide whether to stay for the entire game or leave early and beat the traffic, based on the likelihood of the home team winning that particular game.
 
 ## Definition of Success
 
@@ -38,10 +38,10 @@ I define success as identifying lesser known/"under the radar" players to possib
      
         - "CAP_Modeling.ipynb"
 
-2) CSV file :
+2) CSV file:
     - "retrosheet_game_log_data_columns.csv" used to rename columns in the game logs during data cleaning
 
-3) Images folder
+3) Images folder:
 
     - .png files used in this readme
 
@@ -82,7 +82,7 @@ Intuitively, it makes sense to conclude that the greater the number of players o
 
 But this is not true in every case. Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. 
 
-The dots with the team names are the teams that made the playoffs in the 2021 season. The Braves, highlighted in yellow, won the World Series by defeating the Astos.
+The dots with the team names are the teams that made the playoffs in the 2021 season. The Braves, highlighted in yellow, won the World Series by defeating the Astros.
 
 
 ![This is an image](https://github.com/dw943893/baseball_predictor/blob/main/images/team_num_ab_avgplayers_and_wins.png)
