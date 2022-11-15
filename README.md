@@ -87,7 +87,7 @@ In other words, as a team's number of runs, hits, walks, or homeruns increase, s
 
 Intuitively, it makes sense to believe that the greater the number of players on a team who are better than average in these categories, the more wins that team will experience. To see if that rings true, I identified the players with above average numbers, and counted how many of these players were on each team. Looking at the 2021 season, there is a moderately positive relationship between the number of team wins and the number of above average players on the team. 
 
-But this is not true in every case. Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. 
+But this is not true in every case. Notice the Giants and the Orioles had the same number of above average players in the 2021 season, however, the Giants won over 100 games while the Orioles won 52 games, a wide variation in results. Factors that might explain this variation: injuries to key players during the season, quality of coaching, and team chemistry.
 
 The dots with the team names are the teams that made the playoffs in the 2021 season. The Braves, highlighted in yellow, won the World Series by defeating the Astros.
 
