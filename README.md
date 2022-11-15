@@ -149,7 +149,9 @@ This app calculates a team's chances of winning based on the home and visiting t
 
 ## Potential Areas for Model Improvement
 
-Potentially improve the model's accuracy rate for predicting close games, where the margin of victory is one-run, by employing transfer learning from principal component analysis. 
+- Potentially improve the model's accuracy rate for predicting close games, where the margin of victory is one-run, by employing transfer learning from principal component analysis. 
+
+- Increase the amount of model training data by including game log stats from before 1945. 
 
 ---
 
