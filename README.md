@@ -42,14 +42,11 @@ I define success as identifying lesser known/"under the radar" players to possib
 
     - "baseball.pdf" presentation
 
-3) CSV file:
-    - "retrosheet_game_log_data_columns.csv" used to rename columns in the game logs during data cleaning
-
-4) Images folder:
+3) Images folder:
 
     - .png files used in this readme
 
-5) Streamlit folder:
+4) Streamlit folder:
 
     - Pickled logistic regression model:
     
