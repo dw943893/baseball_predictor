@@ -72,7 +72,7 @@ I define success as identifying lesser known/"under the radar" players to possib
 * [Retrosheet Game Logs](https://www.retrosheet.org/gamelogs/index.html): The game logs contain a record of major league games played from 1871-2021. At a minimum, it provides a listing of the date and score of each game. The logs include information such as team statistics, winning and losing pitchers, linescores, attendance, starting pitchers, umpires and more. There are 161 fields in each record.  [Data Dictionary](https://www.retrosheet.org/gamelogs/glfields.txt) 
     - Please note the disclaimer related to Retrosheet data: The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at www.retrosheet.org.
 
-For the purposes of this analysis, we looked at team stats and game log data for seasons after 1945 (aka the Modern Era of Baseball as defined by Major League Baseball).
+For the purposes of this analysis, we looked at player, team, and game log data for seasons after 1945 (aka the Modern Era of Baseball as defined by Major League Baseball).
 
 ## Findings/Recommendations
 
