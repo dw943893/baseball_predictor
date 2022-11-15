@@ -48,7 +48,7 @@ I define success as identifying lesser known/"under the radar" players to possib
 
 4) Images folder:
 
-    - .png files used in this readme
+    - .png files used in this readme and presentation
 
 5) Streamlit folder:
 
